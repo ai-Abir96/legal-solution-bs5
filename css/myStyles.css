@@ -1,0 +1,295 @@
+/* poppins font */
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Open+Sans:ital@0;1&family=Poppins:wght@500&family=Work+Sans&display=swap");
+/* EB Garamond Font */
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond&family=Inter&family=Open+Sans:ital@0;1&family=Poppins:wght@500&family=Work+Sans&display=swap");
+
+/* ========global css start=========*/
+:root {
+  --primary-color: #b68c5a;
+}
+.primary-color {
+  background: var(--primary-color);
+}
+
+/* garamond font */
+.font-eb-garamond {
+  font-family: "EB Garamond", serif !important;
+  font-weight: 800;
+  font-size: 35px;
+  line-height: 46px;
+}
+
+/* gradient background */
+.gradient-bg::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(17, 17, 17, 0.8);
+  border-radius: 8px;
+}
+/* ========global css end=========*/
+
+/* ========html main and header css start=========*/
+header,
+main {
+  width: 75%;
+  margin: auto;
+  padding-top: 60px;
+  font-family: "Poppins", sans-serif !important;
+}
+/* ========html body css end=========*/
+
+/* ========navbar css start=========*/
+
+/* font of navbar */
+.nav-link {
+  font-weight: 400 !important;
+  font-size: 16px !important;
+  line-height: 24px !important;
+  color: #707070 !important;
+}
+
+/* right angled icon */
+.fa-angle-right {
+  padding-left: 10px;
+  font-size: 18px;
+}
+.nav-button {
+  background: var(--primary-color) !important;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  color: #ffffff;
+  padding: 18px 29px;
+  border: none;
+}
+
+/* ========navbar css end=========*/
+
+/* ========banner css start=========*/
+.carousel-inner {
+  margin-top: 50px;
+}
+.carousel-caption {
+  padding-bottom: 80px;
+  width: 50%;
+  margin: auto;
+}
+.carousel-caption h1 {
+  font-weight: 800;
+  font-size: 72px;
+  line-height: 85px;
+}
+.carousel-caption p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #e7e7e7;
+}
+.search-button {
+  background: var(--primary-color) !important;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  color: #ffffff;
+  padding: 18px 29px;
+  border: none;
+}
+
+/* ========banner css end=========*/
+
+/* practice area css start */
+.practice-aria {
+  margin-top: 100px;
+}
+.practice-aria h1 {
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 52px;
+  color: #414040;
+}
+.practice-aria p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #707070;
+}
+.card {
+  border: 0px solid #e7e7e7;
+}
+.card:hover {
+  background: linear-gradient(180deg, #f3f3f3 0%, rgba(243, 243, 243, 0) 100%);
+}
+.card-body h5 {
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 42px;
+  color: #414040;
+}
+.fa-circle-arrow-right {
+  color: #b68c5a;
+  font-size: 40px;
+}
+/* practice area css end */
+
+/* client opinion section css start */
+.client-opinion {
+  margin-top: 100px;
+}
+.client-opinion h1 {
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 52px;
+  color: #414040;
+}
+.client-opinion p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #707070;
+}
+/* client opinion section css end */
+
+/* faq section css start */
+.faq {
+  margin-top: 100px;
+}
+.accordion-item {
+  background: #f3f3f3;
+  border-radius: 8px;
+}
+.accordion-button {
+  height: 100px;
+}
+
+.accordion-button::after {
+  content: "+" !important;
+  background-image: none;
+  font-size: 25px;
+}
+.accordion-button:not(.collapsed)::after {
+  content: "-" !important;
+  background-image: none;
+  font-size: 25px;
+}
+.accordion-body > .semantic > .article::after {
+  content: "<article>";
+}
+.accordion-body > .semantic > .details::after {
+  content: "<details>";
+}
+.accordion-body > .semantic > .aside::after {
+  content: "<aside>";
+}
+.accordion-body > .semantic > .figcaption::after {
+  content: "<figcaption>";
+}
+
+.accordion-body > .semantic > .footer::after {
+  content: "<footer>";
+}
+.accordion-body > .semantic > .header::after {
+  content: "<header>";
+}
+.accordion-body > .semantic > .main::after {
+  content: "<main>";
+}
+
+.accordion-body > .semantic > .section::after {
+  content: "<section>";
+}
+
+.accordion-body > .semantic > .summary::after {
+  content: "<summary>";
+}
+.accordion-body > .semantic > .time::after {
+  content: "<time>";
+}
+/* faq section css end */
+
+/* footer section css start*/
+footer {
+  font-family: "Poppins", sans-serif !important;
+}
+.foot-col > ul {
+  padding-left: 0;
+}
+.foot-col > ul > li {
+  list-style: none;
+}
+/* footer section css end */
+
+/* media propertice */
+@media only screen and (max-width: 576px) {
+  /* main and header css  */
+  header,
+  main {
+    width: 100% !important;
+    margin: auto;
+    padding-top: 20px;
+  }
+  /* main and header css  */
+
+  /* banner css start */
+  header > .carousel-inner img {
+    height: 500px;
+  }
+  .carousel-caption {
+    width: 80%;
+    margin: auto;
+    padding-bottom: 80px;
+    right: 0;
+    left: 0;
+    bottom: 0.2rem;
+  }
+  .search-button {
+    background: var(--primary-color) !important;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 27px;
+    color: #ffffff;
+    padding: 5px 10px;
+    border: none;
+  }
+
+  .carousel-caption h1 {
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 48px;
+  }
+  .carousel-caption p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    color: #e7e7e7;
+    padding-bottom: 16px;
+    padding-top: 16px;
+  }
+  /* banner css end */
+
+  /* practice area css */
+  .card {
+    border: 1px solid #e7e7e7;
+  }
+  /* practice area css */
+
+  /* 
+  new-section */
+
+  .new-section img {
+    width: 90% !important;
+  }
+  /* footer */
+  footer .row {
+    text-align: center;
+  }
+  footer .custom-padding {
+    padding-top: 40px;
+  }
+}
